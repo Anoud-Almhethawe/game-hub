@@ -1,19 +1,17 @@
-import { Box, Flex } from "@chakra-ui/react";
+import { HStack, Text } from "@chakra-ui/react";
+import SearchBar from "./SearchBar";
+import MoodSwitch from "./MoodSwitch";
 
 const Navbar = () => {
   return (
     <>
-      <Flex>
-        <Box w="100px" p="4" bg="blue.400">
-          Box 1
-        </Box>
-        <Box flex="1" p="4" bg="#000000">
-          Box 3
-        </Box>
-        <Box w="100px" p="4" bg="green.400">
-          Box 2
-        </Box>
-      </Flex>
+      <HStack spacing="24px" p="20px">
+        <Text fontWeight="600" fontSize="25px" style={{ whiteSpace: "nowrap" }}>
+          G-Hub
+        </Text>
+        <SearchBar />
+        <MoodSwitch />
+      </HStack>
     </>
   );
 };
