@@ -1,5 +1,4 @@
 import { HStack, Icon } from "@chakra-ui/react";
-import { Platform } from "../services/Game-services";
 import {
   FaWindows,
   FaPlaystation,
@@ -12,6 +11,7 @@ import { MdPhoneIphone } from "react-icons/md";
 import { SiNintendo } from "react-icons/si";
 import { BsGlobe } from "react-icons/bs";
 import { IconType } from "react-icons";
+import { Platform } from "../hooks/useGame";
 
 interface Props {
   platforms: Platform[];
@@ -34,7 +34,7 @@ const PlatformIconList = ({ platforms }: Props) => {
   return (
     <HStack marginY={1}>
       {platforms.map(platform => (
-        <Icon as={iconMap[platform.slug]} color="gray.500" />
+        <Icon key={platform.id} as={iconMap[platform.slug]} color="gray.500" />
       ))}
     </HStack>
   );
