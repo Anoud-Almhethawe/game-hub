@@ -7,6 +7,6 @@ export interface Genre {
   games_count: number;
   image_background: string;
 }
-const useGenre = () => useData("/genres");
+const useGenre = () => useData<Genre>("/genres");
 
 export default useGenre;
