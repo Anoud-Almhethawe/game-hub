@@ -5,7 +5,7 @@ const MoodSwitch = () => {
   const isDarkMode = colorMode === "dark";
   return (
     <div>
-      <HStack spacing="5px">
+      <HStack spacing="3px">
         <Switch
           colorScheme="teal"
           onChange={toggleColorMode}
