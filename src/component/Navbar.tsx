@@ -1,4 +1,4 @@
-import { Box, HStack, Image, Text } from "@chakra-ui/react";
+import { HStack, Image } from "@chakra-ui/react";
 import SearchBar from "./SearchBar";
 import MoodSwitch from "./MoodSwitch";
 import logo from "../assets/logo.webp";
