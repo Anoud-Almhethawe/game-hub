@@ -1,19 +1,15 @@
-import { HStack, Image, Link } from "@chakra-ui/react";
+import { HStack, Image } from "@chakra-ui/react";
 import SearchBar from "./SearchBar";
 import MoodSwitch from "./MoodSwitch";
 import logo from "../assets/logo.webp";
 
-interface Props {
-  onSearch: (searchText: string) => void;
-}
-
-const Navbar = ({ onSearch }: Props) => {
+const Navbar = () => {
   return (
     <>
       <HStack spacing="24px" p="20px">
         <Image src={logo} alt="logo" boxSize="60px" />
 
-        <SearchBar onSearch={onSearch} />
+        <SearchBar />
         <MoodSwitch />
       </HStack>
     </>
