@@ -3,13 +3,6 @@ import APIClient from "../services/api-client";
 import useGameQueryStore from "../store";
 import Game from "../entities/Game";
 
-export interface Platform {
-  platform: any;
-  id: number;
-  slug: string;
-  name: string;
-}
-
 const apiClient = new APIClient<Game>("/games");
 
 const useGames = () => {

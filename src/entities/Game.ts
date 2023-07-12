@@ -1,5 +1,5 @@
-import { Platform } from "../hooks/useGames";
 import Genre from "./Genre";
+import Platforms from "./Platforms";
 import publishers from "./puplisher";
 
 export default interface Game {
@@ -10,7 +10,7 @@ export default interface Game {
   rating: number;
   rating_top: number;
   metacritic: number;
-  parent_platforms: Platform[];
+  parent_platforms: { platform: Platforms }[];
   description_raw: string;
   genres: Genre[];
   publishers: publishers[];
