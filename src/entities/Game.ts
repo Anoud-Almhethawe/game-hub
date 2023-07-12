@@ -1,4 +1,6 @@
 import { Platform } from "../hooks/useGames";
+import { Genre } from "./Genre";
+import { publishers } from "./puplisher";
 
 export interface Game {
   id: number;
@@ -10,4 +12,6 @@ export interface Game {
   metacritic: number;
   parent_platforms: Platform[];
   description_raw: string;
+  genres: Genre[];
+  publishers: publishers[];
 }
